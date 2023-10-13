@@ -98,7 +98,6 @@
             "scripts": []
           }
         },
-<<<<<<< Updated upstream
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
@@ -108,8 +107,6 @@
             ]
           }
         },
-=======
->>>>>>> Stashed changes
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
         }
