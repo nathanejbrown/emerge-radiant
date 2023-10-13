@@ -1,6 +1,7 @@
 {
   "name": "emerge-radiant",
   "version": "0.0.0",
+  "homepage": "https://nathanejbrown.github.io/emerge-radiant/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
