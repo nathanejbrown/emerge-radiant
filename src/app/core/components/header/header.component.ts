@@ -18,7 +18,7 @@ export class HeaderComponent {
   xmark = faXmark
   mobileNavOpen: boolean = false;
   events: string[] = [];
-  opened: boolean = true;
+  opened: boolean = false;
 
   constructor(private breakpointObserver: BreakpointObserver) {}
   
