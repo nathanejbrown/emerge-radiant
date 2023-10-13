@@ -1,0 +1,57 @@
+.container {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #EFF5F5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 1rem;
+
+    li {
+      list-style-type: none;
+      margin: 0.5rem;
+    }
+  }
+
+  .logo {
+    height: 7.5rem;
+  }
+
+  .social {
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+
+    .mail {
+      color: black;
+    }
+
+    .icon {
+      cursor: pointer;
+  
+      &-facebook {
+        color: #3b5998;
+      }
+  
+      &-instagram {
+        color: #3f729b;
+      }
+  
+      &-yelp {
+        color: #af0606;
+      }
+    }
+  }
+
+}

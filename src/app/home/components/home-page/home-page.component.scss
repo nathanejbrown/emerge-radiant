@@ -1,0 +1,61 @@
+@import '../../../../assets/styles/colors.scss';
+
+.hero {
+  width: 100%;
+  position: relative;
+  background: url('../../../../assets/images/hero-butterfly.png');
+  height: 38rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  img {
+    width: inherit;
+  }
+
+  &-text {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    p {
+      margin: 0;
+      color: $radiant-primary-teal;
+      font-weight: 500;
+      font-size: 61px;
+    }
+  }
+}
+
+.services {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  min-height: 15rem;
+  background-color: $radiant-primary-teal;
+  text-align: center;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .service {
+    max-width: 16rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
