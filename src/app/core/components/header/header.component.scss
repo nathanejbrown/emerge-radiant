@@ -7,9 +7,14 @@
   align-items: center;
   background-color: $radiant-primary-teal;
   height: 4rem;
+
+  @media only screen and (max-width: 600px) {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
 }
 
-nav {
+.nav {
   display: flex;
   min-width: 25%;
   justify-content: space-between;
@@ -17,7 +22,7 @@ nav {
   &:hover {
     cursor: pointer;
   }
-  
+
   a {
     color: white;
     text-decoration: none;
@@ -25,4 +30,63 @@ nav {
       color: white;
     }
   }
+}
+
+.nav-mobile {
+  &-options {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid grey;
+      border-width: 10%;
+      padding: 1rem;
+
+      h4 {
+        margin: 0;
+      }
+    }
+
+    .option {
+      height: 2rem;
+      line-height: 2rem;
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+      
+      &:active {
+        background-color: #eff5f5;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: black;
+      text-decoration: none;
+    }
+  }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .hamburger {
+    position: absolute;
+    top: 2.5%;
+    left: 2%;
+  }
+
+  .side-nav {
+    background-color: white;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+  }
+}
+
+.hidden {
+  display: none;
 }

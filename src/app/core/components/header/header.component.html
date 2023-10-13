@@ -1,9 +1,25 @@
 <div class="container">
-  <nav>
+  <nav class="nav" [ngClass]="{'hidden': (isHandset$ | async)}">
     <a href="/">Home</a>
     <a href="/">About</a>
     <a href="/">Services</a>
     <a href="/">Gift Cards</a>
     <a href="/">Book Appointment</a>
   </nav>
+  <mat-sidenav-container class="nav-mobile">
+    <fa-icon [ngClass]="{'hidden': !(isHandset$ | async) || opened}" class="hamburger fa-lg" [icon]="bars" (click)="sidenav.open()"></fa-icon>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="side-nav">
+      <div class="nav-mobile-options">
+        <div class="header">
+          <h4>Emerge Radiant</h4>
+          <fa-icon [icon]="xmark" (click)="sidenav.close()"></fa-icon>
+        </div>
+        <p class="option" href="/">Home</p>
+        <p class="option" href="/">About</p>
+        <p class="option" href="/">Services</p>
+        <p class="option" href="/">Gift Cards</p>
+        <p class="option" href="/">Book Appointment</p>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
 </div>

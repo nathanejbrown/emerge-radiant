@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faInstagram, faFacebook, faYelp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
