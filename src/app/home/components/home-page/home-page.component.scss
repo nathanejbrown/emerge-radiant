@@ -2,33 +2,20 @@
 
 .hero {
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background: url('../../../../assets/images/hero-butterfly.png');
   height: 38rem;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 600px) {
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 10rem;
   }
 
-  img {
-    width: inherit;
-  }
-
   &-text {
-    position: absolute;
-    top: 40%;
-    right: 30%;
-
-    @media only screen and (max-width: 600px) {
-      top: 18%;
-      right: 15%;
-    }
+    margin-right: 10%;
 
     p {
       @media only screen and (max-width: 600px) {
