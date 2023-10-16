@@ -10,21 +10,18 @@
 <div class="services">
   <h1>Services</h1>
   <div class="services-list">
-    <div class="service">
+    <div *ngFor="let x of [1,2,3]" class="service">
       <img src="assets/images/microblading.webp" />
       <h4>Microblading & Permanent Makeup</h4>
-      <p>Microblading is a process by which something happens blah blah blah</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa quis, omnis molestiae aut repellat dolorem, nemo aspernatur esse sit, sequi nam? Ab minima, itaque minus culpa corrupti distinctio officia?</p>
     </div>
-    <div class="service">
-      <img src="assets/images/microblading.webp" />
-      <h4>Microblading & Permanent Makeup</h4>
-      <p>Microblading is a process by which something happens blah blah blah</p>
-    </div>
-    <div class="service">
-      <img src="assets/images/microblading.webp" />
-      <h4>Microblading & Permanent Makeup</h4>
-      <p>Microblading is a process by which something happens blah blah blah</p>
-    </div>
+  </div>
+</div>
+
+<div class="donations">
+  <div class="donations-info">
+    <h1>Love Donation</h1>
+    <p>{{donationText}}</p>
   </div>
 </div>
 

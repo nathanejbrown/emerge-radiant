@@ -6,8 +6,8 @@
     <a href="/">Gift Cards</a>
     <a href="/">Book Appointment</a>
   </nav>
-  <mat-sidenav-container class="nav-mobile">
-    <fa-icon [ngClass]="{'hidden': !(isHandset$ | async) || opened}" class="hamburger fa-lg" [icon]="bars" (click)="sidenav.open()"></fa-icon>
+  <mat-sidenav-container *ngIf="(isHandset$ | async)" class="nav-mobile">
+    <fa-icon [ngClass]="{'hidden': opened}" class="hamburger fa-lg" [icon]="bars" (click)="sidenav.open()"></fa-icon>
     <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="side-nav">
       <div class="nav-mobile-options">
         <div class="header">

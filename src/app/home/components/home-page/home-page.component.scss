@@ -3,19 +3,19 @@
 .hero {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  background: url('../../../../assets/images/hero-butterfly.png');
-  height: 38rem;
+  background: url('../../../../assets/images/unsplash/chelsea-shapouri-r40EYKVyutI-unsplash.jpg');
+  min-height: 50rem;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   @media only screen and (max-width: 600px) {
     height: 10rem;
   }
 
   &-text {
-    margin-right: 10%;
 
     p {
       @media only screen and (max-width: 600px) {
@@ -23,7 +23,7 @@
       }
 
       margin: 0;
-      color: $radiant-primary-teal;
+      color: #eff5f5;
       font-weight: 500;
       font-size: 61px;
     }
@@ -32,7 +32,6 @@
 
 .services {
   padding: 1rem;
-  margin-top: 0.5rem;
   min-height: 15rem;
   background-color: $radiant-primary-teal;
   text-align: center;
@@ -43,24 +42,23 @@
 
   &-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
   }
 
   .service {
-    max-width: 16rem;
+    width: 27rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media only screen and (max-width: 600px) {
-      margin-top: 2rem;
-    }
+    margin-top: 2rem;
 
     img {
       height: 10rem;
@@ -70,6 +68,29 @@
   }
 
   p {
+    margin: 0;
+  }
+}
+
+.donations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../../../../assets/images/unsplash/kelly-sikkema-UaO58q6ioxI-unsplash.jpg');
+  min-height: 50rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &-info {
+    width: 28rem;
+    background-color: #eff5f595;
+    padding: 1rem;
+  }
+
+  h1 {
+    text-align: center;
     margin: 0;
   }
 }
