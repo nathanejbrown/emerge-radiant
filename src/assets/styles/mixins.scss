@@ -1,0 +1,8 @@
+@mixin parallax-scroll {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+}

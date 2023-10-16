@@ -1,28 +1,35 @@
-<app-header></app-header>
+<app-header *ngIf="!(isHandset$ | async)"></app-header>
 
 <div class="hero">
-  <div class="hero-text">
+  <div *ngIf="!(isHandset$ | async)" class="hero-text">
     <p>Emerge</p>
     <p>Radiant</p>
   </div>
 </div>
-
-<div class="services">
-  <h1>Services</h1>
-  <div class="services-list">
-    <div *ngFor="let x of [1,2,3]" class="service">
-      <img src="assets/images/microblading.webp" />
-      <h4>Microblading & Permanent Makeup</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa quis, omnis molestiae aut repellat dolorem, nemo aspernatur esse sit, sequi nam? Ab minima, itaque minus culpa corrupti distinctio officia?</p>
+<div class="content">
+  <app-header *ngIf="(isHandset$ | async)"></app-header>
+  <div *ngIf="(isHandset$ | async)" class="hero-text">
+    <p>Emerge</p>
+    <p>Radiant</p>
+  </div>
+  
+  <div class="services">
+    <h1>Services</h1>
+    <div class="services-list">
+      <div *ngFor="let x of [1,2,3]" class="service">
+        <img src="assets/images/microblading.webp" />
+        <h4>Microblading & Permanent Makeup</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa quis, omnis molestiae aut repellat dolorem, nemo aspernatur esse sit, sequi nam? Ab minima, itaque minus culpa corrupti distinctio officia?</p>
+      </div>
     </div>
   </div>
+  
+  <!-- <div class="donations">
+    <div class="donations-info">
+      <h1>Love Donation</h1>
+      <p>{{donationText}}</p>
+    </div>
+  </div> -->
+  
+  <app-footer></app-footer>
 </div>
-
-<div class="donations">
-  <div class="donations-info">
-    <h1>Love Donation</h1>
-    <p>{{donationText}}</p>
-  </div>
-</div>
-
-<app-footer></app-footer>
