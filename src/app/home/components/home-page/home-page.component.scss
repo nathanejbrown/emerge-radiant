@@ -4,7 +4,7 @@
 .hero {
   background: url('../../../../assets/images/unsplash/chelsea-shapouri-r40EYKVyutI-unsplash.jpg');
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 601px) {
     min-height: 50rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,20 +91,34 @@
 }
 
 .donations {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: url('../../../../assets/images/unsplash/kelly-sikkema-UaO58q6ioxI-unsplash.jpg');
-  min-height: 50rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
+  @media screen and (min-width: 601px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  @media screen and (max-width: 600px) {
+    @include parallax-scroll;
+  }
 
   &-info {
     width: 28rem;
     background-color: #eff5f595;
     padding: 1rem;
+  }
+
+  &-container {
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 {

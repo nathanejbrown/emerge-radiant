@@ -24,12 +24,18 @@
     </div>
   </div>
   
-  <!-- <div class="donations">
+  <div class="donations">
+    <div *ngIf="!(isHandset$ | async)" class="donations-info">
+      <h1>Love Donation</h1>
+      <p>{{donationText}}</p>
+    </div>
+  </div>
+  <div *ngIf="(isHandset$ | async)" class="donations-container">
     <div class="donations-info">
       <h1>Love Donation</h1>
       <p>{{donationText}}</p>
     </div>
-  </div> -->
+  </div>
   
   <app-footer></app-footer>
 </div>
